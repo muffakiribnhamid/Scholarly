@@ -7,6 +7,7 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 import { useUserContext } from '../context/AppContext'
 import Loader from '../components/Loader'
+import { images } from '../utils/images'
 
 const SUBJECTS = [
     'Physics',
@@ -311,11 +312,11 @@ const SetupStudent = () => {
                     <div className='relative group hidden md:block'>
                         <div className='absolute -inset-2 bg-gradient-to-r from-blue-100 to-blue-50 rounded-2xl transform rotate-2 group-hover:rotate-3 transition-transform duration-300'></div>
                         <div className='absolute inset-0 bg-white/90 backdrop-blur-sm rounded-2xl transform -rotate-2 group-hover:-rotate-3 transition-transform duration-300'></div>
-                        <img 
-                            className='relative rounded-xl shadow-lg transform transition-all duration-300 group-hover:scale-[1.01] w-full h-auto max-w-lg mx-auto' 
-                            src="./src/assets/asset3.png" 
-                            alt="Setup Your Profile" 
-                            width={600} 
+                        <img
+                            className='relative rounded-2xl shadow-lg transform transition-transform duration-300 group-hover:scale-[1.02]'
+                            src={images.asset3}
+                            alt="Setup Student Profile"
+                            width={600}
                             height={600}
                         />
                     </div>

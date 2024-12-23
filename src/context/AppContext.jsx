@@ -7,6 +7,7 @@ const UserContext = createContext()
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [isOnBoarded, setIsOnBoarded] = useState(false)
 
   useEffect(() => {
     // Set up auth state observer
@@ -14,6 +15,12 @@ export const UserProvider = ({ children }) => {
       setUser(user)
       setLoading(false)
     })
+
+    // Check if user is onboarded
+    const onboardingStatus = localStorage.getItem('isOnBoarded')
+    if (onboardingStatus) {
+      setIsOnBoarded(true)
+    }
 
     // Cleanup subscription
     return () => unsubscribe()
@@ -28,7 +35,7 @@ export const UserProvider = ({ children }) => {
   }
 
   return (
-    <UserContext.Provider value={{ user, setUser }}>
+    <UserContext.Provider value={{ user, setUser, isOnBoarded, setIsOnBoarded }}>
       {children}
     </UserContext.Provider>
   )

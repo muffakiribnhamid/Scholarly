@@ -6,6 +6,7 @@ import Button from '../components/Button'
 import Input from '../components/Input'
 import { auth } from '../firebase/config'
 import Loader from '../components/Loader'
+import { images } from '../utils/images'
 
 const Login = () => {
     // Form state
@@ -150,11 +151,11 @@ const Login = () => {
                     <div className='relative group hidden md:block'>
                         <div className='absolute -inset-2 bg-gradient-to-r from-blue-100 to-blue-50 rounded-2xl transform rotate-2 group-hover:rotate-3 transition-transform duration-300'></div>
                         <div className='absolute inset-0 bg-white/90 backdrop-blur-sm rounded-2xl transform -rotate-2 group-hover:-rotate-3 transition-transform duration-300'></div>
-                        <img 
-                            className='relative rounded-xl shadow-lg transform transition-all duration-300 group-hover:scale-[1.01] w-full h-auto max-w-lg mx-auto' 
-                            src="./src/assets/asset2.png" 
-                            alt="Study Smart with Scholarly" 
-                            width={600} 
+                        <img
+                            className='relative rounded-2xl shadow-lg transform transition-transform duration-300 group-hover:scale-[1.02]'
+                            src={images.asset2}
+                            alt="Login Illustration"
+                            width={600}
                             height={600}
                         />
                     </div>

@@ -4,6 +4,7 @@ import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../firebase/config'
 import { FiUser, FiBook, FiAward } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom'
+import { images } from '../utils/images'
 
 const MyProfile = () => {
   const { user } = useUserContext()
@@ -111,7 +112,7 @@ const MyProfile = () => {
         <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between mb-4">
             <div className="p-3 bg-blue-100 rounded-lg">
-              <img width={30} height={30} src="./src/assets/task.png" alt="" className="opacity-75" />
+              <img width={30} height={30} src={images.task} alt="Tasks" className="opacity-75" />
             </div>
             <span className="text-2xl sm:text-3xl font-bold text-blue-600">{profileData.totalTasks}</span>
           </div>
@@ -122,7 +123,7 @@ const MyProfile = () => {
         <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between mb-4">
             <div className="p-3 bg-green-100 rounded-lg">
-              <img width={30} height={30} src="./src/assets/checklist.png" alt="" className="opacity-75" />
+              <img width={30} height={30} src={images.checklist} alt="Checklist" className="opacity-75" />
             </div>
             <span className="text-2xl sm:text-3xl font-bold text-green-600">{profileData.completedTasks}</span>
           </div>
@@ -133,7 +134,7 @@ const MyProfile = () => {
         <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between mb-4">
             <div className="p-3 bg-purple-100 rounded-lg">
-              <img width={30} height={30} src="./src/assets/session.png" alt="" className="opacity-75" />
+              <img width={30} height={30} src={images.session} alt="Sessions" className="opacity-75" />
             </div>
             <span className="text-2xl sm:text-3xl font-bold text-purple-600">{profileData.focusedSessions}</span>
           </div>
