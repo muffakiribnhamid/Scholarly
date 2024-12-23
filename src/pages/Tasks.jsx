@@ -8,7 +8,6 @@ import { FiCheck, FiRotateCcw, FiPlus } from 'react-icons/fi'
 
 const Tasks = () => {
   const navigate = useNavigate()
-  const [isModalOpen, setIsModalOpen] = useState(false)
   const [tasks, setTasks] = useState([])
   const [loading, setLoading] = useState(true)
   const [tasksToRemove, setTasksToRemove] = useState([])

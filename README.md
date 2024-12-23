@@ -1,8 +1,6 @@
 <h1 align="center">Scholarly - Student Task Management System</h1>
 
-<p align="center">
-  <img src="public/scholarly-logo.png" alt="Scholarly Logo" width="200"/>
-</p>
+
 
 <p align="center">
   <strong>A modern student task management system enhanced with AI capabilities</strong>
@@ -15,11 +13,7 @@
   <a href="#contributing">Contributing</a>
 </p>
 
-<div align="center">
-  <p>Developed with the assistance of AI tools:</p>
-  <img src="https://img.shields.io/badge/Codeium%20AI-Enabled-blue?style=for-the-badge" alt="Codeium AI"/>
-  <img src="https://img.shields.io/badge/Gemini%20AI-Powered-green?style=for-the-badge" alt="Gemini AI"/>
-</div>
+
 
 <hr>
 
